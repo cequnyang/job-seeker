@@ -1,0 +1,70 @@
+scoring_weights:
+  language_requirement: 0.08
+  visa_sponsorship: 0.16
+  seniority: 0.08
+  technical_skills: 0.43
+  domain_experience: 0.25
+
+filters:
+  exclude_student_jobs: true
+  exclude_3rd_party: true
+  min_score_threshold: 55
+
+language_preferences:
+  preferred: [English]
+  acceptable: [English]
+  hard_block: []
+
+market_strategy:
+  objective: maximize_offer_probability
+  positioning: Java Backend / Software Engineer for English-speaking SaaS, fintech, cloud, and platform teams
+  rationale: Ireland should be Li-weighted and English-first; the best success path is mainstream Java/Spring backend in SaaS, fintech, platform, and cloud-adjacent employers where Critical Skills permit eligibility is plausible.
+  strategy_weight: 0.20
+  preferred_titles:
+    - Java Developer
+    - Java Backend Engineer
+    - Software Engineer Java
+    - Backend Software Engineer
+    - Platform Engineer
+  preferred_technologies:
+    - Java
+    - Spring Boot
+    - microservices
+    - Kafka
+    - REST
+    - cloud
+    - AWS
+    - Kubernetes
+    - PostgreSQL
+  preferred_domains:
+    - SaaS
+    - fintech
+    - payments
+    - cloud
+    - platform
+    - ecommerce
+    - backend
+  demand_signals:
+    - critical skills
+    - sponsorship
+    - visa sponsorship
+    - hybrid
+    - permanent
+    - English
+  risk_terms:
+    - Stamp 4 required
+    - EU work permit required
+    - frontend
+
+search:
+  custom_queries:
+    - Java Developer Ireland
+    - Software Engineer Java Ireland
+    - Java Spring Boot Ireland
+    - Backend Platform Engineer Dublin
+    - Software Engineer Java Dublin
+    - Java Microservices Ireland
+    - Java Backend Fintech Dublin
+    - Java Kafka Cork
+    - Software Engineer Java Galway
+  max_dynamic_queries: 8

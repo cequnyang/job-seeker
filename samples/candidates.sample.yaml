@@ -1,0 +1,126 @@
+candidates:
+  sample_backend_engineer:
+    name: Sample Backend Engineer
+    aliases: [sample_backend, backend_sample, backend_engineer]
+    resume_path: samples/sample_backend_engineer.md
+    primary_positioning: Java Backend / Platform Engineer for logistics and event-driven systems
+    portfolio_project: SampleBackendProject
+    primary_keywords:
+      - Java
+      - Spring Boot
+      - Kafka
+      - distributed systems
+      - logistics
+      - fulfillment
+      - platform engineer
+    target_industries:
+      - logistics
+      - fulfillment
+      - ecommerce
+      - supply chain
+      - fintech
+      - b2b saas
+    languages:
+      - English B2
+      - German A1/A2 in progress
+    primary_markets: [germany, canada, australia, netherlands, ireland]
+    material_status:
+      english_cv: ready
+      linkedin: draft_ready
+      github_readme: sample_backend_project_needs_replacement
+      degree_recognition: not_started
+      language_exam: planned
+    market_settings:
+      germany:
+        priority: main
+        scoring_config: config/germany_java_backend.yaml
+        positioning: Java Backend / Platform Engineer for logistics, Kafka, and fulfillment systems
+        target_roles: [Java Backend Engineer, Platform Engineer, Backend Engineer Logistics, Kafka Backend Engineer]
+        portfolio_project: SampleBackendProject
+        portfolio_action: Replace the sample backend project with your own role-relevant backend portfolio evidence before real runs.
+      canada:
+        priority: main
+        scoring_config: config/canada_java_backend.yaml
+        positioning: Java Backend Engineer for logistics, platform reliability, and distributed systems
+        target_roles: [Java Backend Engineer, Software Engineer Java, Backend Platform Engineer]
+        portfolio_project: SampleBackendProject
+        portfolio_action: Prepare CRS, ECA, IELTS/CELPIP planning notes before treating Canada as a serious PR path.
+      australia:
+        priority: main
+        scoring_config: config/australia_java_backend.yaml
+        positioning: Java Backend Engineer for platform, logistics, and high-throughput backend services
+        target_roles: [Java Developer, Backend Engineer, Software Engineer Java]
+        portfolio_project: SampleBackendProject
+        portfolio_action: Prepare skills-assessment notes and map real backend delivery evidence to the target occupation before real runs.
+      netherlands:
+        priority: secondary
+        scoring_config: config/netherlands_java_backend.yaml
+        positioning: Java Backend Engineer for English-friendly logistics/platform teams
+      ireland:
+        priority: secondary
+        scoring_config: config/ireland_java_backend.yaml
+        positioning: Java Backend Engineer for English-speaking backend/platform teams
+
+  sample_cpp_qt_engineer:
+    name: Sample C++ Qt Engineer
+    aliases: [sample_cpp_qt, cpp_qt_sample, cpp_qt_engineer]
+    resume_path: samples/sample_cpp_qt_engineer.md
+    primary_positioning: C++ / Qt / Linux engineer for industrial HMI, diagnostics, and SDK integration
+    portfolio_project: SampleIndustrialHmiProject
+    primary_keywords:
+      - C++
+      - Qt
+      - QML
+      - Linux
+      - CMake
+      - HMI
+      - diagnostics
+      - SDK integration
+      - industrial software
+    target_industries:
+      - industrial automation
+      - medical devices
+      - robotics
+      - automotive suppliers
+      - measurement systems
+      - energy
+      - engineering tools
+    languages:
+      - English B2
+      - German A2
+    primary_markets: [germany, australia, austria, netherlands, sweden]
+    material_status:
+      english_cv: ready
+      linkedin: draft_ready
+      github_readme: sample_hmi_project_needs_replacement
+      linux_cmake_evidence: in_progress
+      language_exam: planned
+    market_settings:
+      germany:
+        priority: main
+        scoring_config: config/germany_cpp_industrial.yaml
+        positioning: C++ / Qt / Linux / industrial HMI engineer
+        target_roles: [C++ Qt Engineer, C++ Linux Engineer, HMI Developer, Diagnostics Engineer]
+        portfolio_project: SampleIndustrialHmiProject
+        portfolio_action: Replace the sample HMI project with your own Qt/QML or desktop-software portfolio evidence before real runs.
+      australia:
+        priority: main
+        scoring_config: config/australia_cpp_industrial.yaml
+        positioning: C++ / Qt / diagnostics engineer for engineering, device, and industrial software
+        target_roles: [C++ Software Engineer, Qt Developer, Embedded-adjacent C++ Engineer, Diagnostics Tooling Engineer]
+        portfolio_project: SampleIndustrialHmiProject
+        portfolio_action: Add an Australia-facing paragraph linking diagnostics, SDK integration, and engineering software delivery.
+      austria:
+        priority: secondary
+        scoring_config: config/austria_cpp_industrial.yaml
+        positioning: C++ / Qt / industrial software engineer for DACH engineering teams
+        target_roles: [C++ Entwickler, Qt Entwickler, HMI Software Engineer]
+        portfolio_project: SampleIndustrialHmiProject
+      netherlands:
+        priority: secondary
+        scoring_config: config/netherlands_cpp_industrial.yaml
+        positioning: C++ / Qt engineer for English-friendly industrial and engineering tooling teams
+      sweden:
+        priority: secondary
+        scoring_config: config/sweden_cpp_industrial.yaml
+        positioning: C++ / Qt / Linux engineer for industrial tooling and embedded-adjacent software

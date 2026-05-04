@@ -1,0 +1,20 @@
+scoring_weights:
+  language_requirement: 0.15
+  visa_sponsorship: 0.10
+  seniority: 0.10
+  technical_skills: 0.40
+  domain_experience: 0.25
+
+filters:
+  exclude_student_jobs: true
+  exclude_3rd_party: true
+  min_score_threshold: 50
+
+language_preferences:
+  preferred: [English, German]
+  acceptable: [English]
+  hard_block: [German B2+ required]
+
+search:
+  custom_queries: []
+  max_dynamic_queries: 8

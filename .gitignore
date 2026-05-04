@@ -1,0 +1,26 @@
+# Environment variables (contains secrets)
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.venv/
+*.bak_*
+
+# LinkedIn browser profile
+.linkedin_profile/
+local_private/
+samples/*.pdf
+samples/*.docx
+
+# Dashboard output
+outputs/
+results/
+latest_dashboard.html
+latest_migration_cockpit.html
+
+# OS files
+.DS_Store
+Thumbs.db

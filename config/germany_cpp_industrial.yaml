@@ -1,0 +1,72 @@
+scoring_weights:
+  language_requirement: 0.13
+  visa_sponsorship: 0.12
+  seniority: 0.08
+  technical_skills: 0.42
+  domain_experience: 0.25
+
+filters:
+  exclude_student_jobs: true
+  exclude_3rd_party: true
+  min_score_threshold: 55
+
+language_preferences:
+  preferred: [English, German]
+  acceptable: [English]
+  hard_block: [German B2+ required]
+
+market_strategy:
+  objective: maximize_offer_probability
+  positioning: C++ / Qt / Linux engineer for industrial HMI, diagnostics, SDK integration, and engineering tools
+  rationale: Germany is Cequn's strongest C++ line when the role sits near industrial software, Qt/QML, HMI, diagnostics, automation, measurement, medical, or automotive suppliers; pure Windows desktop or pure web/client roles should not be the center.
+  strategy_weight: 0.22
+  preferred_titles:
+    - C++ Qt Engineer
+    - C++ Software Engineer
+    - Qt Developer
+    - HMI Developer
+    - Diagnostics Engineer
+    - Industrial Software Engineer
+  preferred_technologies:
+    - C++
+    - Qt
+    - QML
+    - Linux
+    - CMake
+    - HMI
+    - diagnostics
+    - SDK
+    - state machine
+  preferred_domains:
+    - industrial software
+    - automation
+    - HMI
+    - diagnostics
+    - measurement
+    - medical devices
+    - automotive
+    - engineering tools
+  demand_signals:
+    - relocation
+    - visa sponsorship
+    - blue card
+    - hybrid
+    - English
+  risk_terms:
+    - German C1
+    - native German
+    - AUTOSAR expert
+    - embedded C only
+    - frontend
+
+search:
+  custom_queries:
+    - C++ Qt
+    - C++ Linux
+    - C++ HMI
+    - C++ Industrial Software
+    - C++ Diagnostics
+    - C++ SDK Tooling
+    - Qt QML C++
+    - C++ Embedded Software
+  max_dynamic_queries: 8

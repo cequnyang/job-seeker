@@ -1,0 +1,251 @@
+campaign_defaults:
+  default_campaign: online_validation_2026_q2
+  validation_applications: 100
+  healthy_reply_min: 3
+  strong_technical_screens: 2
+
+tracking:
+  tracker_paths:
+    - samples/trackers/migration_cockpit/job_search_tracker.csv
+
+markets:
+  germany:
+    name: Germany
+    aliases: [de, deutschland]
+    country: Germany
+    search_location: Germany
+    location_keywords: [Germany, Berlin, Munich, Hamburg, Cologne, Stuttgart, Frankfurt, Dresden, Leipzig]
+    default_priority: main
+    immigration_path: Opportunity Card for local search, then EU Blue Card or skilled worker route after offer
+    job_search_mode: 8-12 weeks online validation before spending Opportunity Card time
+    permanence_score: 92
+    offshore_sponsor_score: 62
+    english_access_score: 62
+    local_language_risk: high
+    priority_industries: [logistics, ecommerce, industrial software, automation, medical devices, automotive, energy]
+    activation_rule: Do not activate Opportunity Card until the two-candidate funnel shows stable real HR/recruiter calls.
+    risk_notes:
+      - German language requirements can convert an otherwise good technical match into a practical risk.
+      - Opportunity Card improves local interview access but is not a job offer or work authorization by itself.
+    policy_sources:
+      - label: Job search opportunity card Germany
+        url: https://www.make-it-in-germany.com/en/visa-residence/opportunity-card/job-search
+        last_reviewed: "2026-05-04"
+      - label: EU Blue Card Germany
+        url: https://www.make-it-in-germany.com/en/visa-residence/types/eu-blue-card
+        last_reviewed: "2026-05-04"
+
+  canada:
+    name: Canada
+    aliases: [ca]
+    country: Canada
+    search_location: Canada
+    location_keywords: [Canada, Toronto, Vancouver, Montreal, Ottawa, Waterloo, Calgary]
+    default_priority: main
+    immigration_path: Express Entry / PNP / Canadian Experience Class planning, with employer route if available
+    job_search_mode: Parallel PR-score preparation plus selective Java/backend and C++/engineering market tests
+    permanence_score: 88
+    offshore_sponsor_score: 50
+    english_access_score: 95
+    local_language_risk: low
+    priority_industries: [backend, platform, logistics, ecommerce, fintech, supply chain, engineering tools]
+    activation_rule: Calculate CRS and ECA/language-test plan before interpreting Canada as a stable PR route.
+    risk_notes:
+      - Offshore hiring without Canadian experience is materially harder than local-market matching.
+      - CRS and provincial nomination details should be reviewed before investing heavily.
+    policy_sources:
+      - label: Express Entry CRS criteria
+        url: https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/check-score/crs-criteria.html
+        last_reviewed: "2026-05-04"
+
+  australia:
+    name: Australia
+    aliases: [au]
+    country: Australia
+    search_location: Australia
+    location_keywords: [Australia, Sydney, Melbourne, Brisbane, Perth, Adelaide, Canberra]
+    default_priority: main
+    immigration_path: Skills in Demand 482, ENS 186, and points-tested 189/190/491 assessment
+    job_search_mode: Employer-sponsor test plus ACS/points pre-assessment
+    permanence_score: 86
+    offshore_sponsor_score: 55
+    english_access_score: 95
+    local_language_risk: low
+    priority_industries: [software engineering, engineering tools, industrial software, medical devices, mining, energy, backend]
+    activation_rule: Build an ACS-style evidence map before heavy Australian applications.
+    risk_notes:
+      - Offshore sponsor conversion is possible but still a bottleneck.
+      - Occupation list, state nomination, and skills assessment details need case-specific validation.
+    policy_sources:
+      - label: Skills in Demand visa subclass 482
+        url: https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482
+        last_reviewed: "2026-05-04"
+      - label: Skilled Independent visa subclass 189
+        url: https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189
+        last_reviewed: "2026-05-04"
+      - label: Skilled Nominated visa subclass 190
+        url: https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-nominated-190
+        last_reviewed: "2026-05-04"
+      - label: Skilled Work Regional visa subclass 491
+        url: https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-work-regional-provisional-491
+        last_reviewed: "2026-05-04"
+      - label: Employer Nomination Scheme subclass 186
+        url: https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186
+        last_reviewed: "2026-05-04"
+
+  netherlands:
+    name: Netherlands
+    aliases: [nl, holland]
+    country: Netherlands
+    search_location: Netherlands
+    location_keywords: [Netherlands, Amsterdam, Rotterdam, Eindhoven, Utrecht, Delft]
+    default_priority: secondary
+    immigration_path: Highly Skilled Migrant with recognised sponsor; long-term residence planning usually around 5 years
+    job_search_mode: English-friendly market supplement for backend/platform and selected C++ engineering roles
+    permanence_score: 74
+    offshore_sponsor_score: 67
+    english_access_score: 90
+    local_language_risk: medium
+    priority_industries: [platform, fintech, logistics, ecommerce, engineering tools, high tech systems]
+    activation_rule: Prefer recognised-sponsor companies and English-first teams.
+    risk_notes:
+      - Recognised sponsor status matters.
+      - PR timeline is less fast than Germany's Blue Card path.
+    policy_sources:
+      - label: Highly skilled migrant IND
+        url: https://ind.nl/en/residence-permits/work/highly-skilled-migrant
+        last_reviewed: "2026-05-04"
+
+  ireland:
+    name: Ireland
+    aliases: [ie]
+    country: Ireland
+    search_location: Ireland
+    location_keywords: [Ireland, Dublin, Cork, Galway, Limerick]
+    default_priority: secondary
+    immigration_path: Critical Skills Employment Permit, then Stamp 4 route planning
+    job_search_mode: English-speaking supplement, stronger for Li than Cequn
+    permanence_score: 80
+    offshore_sponsor_score: 62
+    english_access_score: 98
+    local_language_risk: low
+    priority_industries: [backend, platform, fintech, saas, cloud, ecommerce]
+    activation_rule: Treat Ireland as Li-weighted unless C++ roles are clearly engineering-tooling aligned.
+    risk_notes:
+      - C++/Qt industrial market is smaller than Germany/Austria.
+      - Permit eligibility needs occupation and salary checks.
+    policy_sources:
+      - label: Critical Skills Employment Permit
+        url: https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/permit-types/critical-skills-employment-permit/
+        last_reviewed: "2026-05-04"
+
+  austria:
+    name: Austria
+    aliases: [at, oesterreich]
+    country: Austria
+    search_location: Austria
+    location_keywords: [Austria, Vienna, Graz, Linz, Salzburg, Innsbruck]
+    default_priority: secondary
+    immigration_path: Red-White-Red Card / skilled-worker route
+    job_search_mode: DACH industrial/C++ supplement where German matters more
+    permanence_score: 70
+    offshore_sponsor_score: 52
+    english_access_score: 48
+    local_language_risk: high
+    priority_industries: [industrial software, automation, automotive, measurement systems, energy, engineering tools]
+    activation_rule: Only scale Austria if Cequn gets HR/recruiter signal despite German-language risk.
+    risk_notes:
+      - German language pressure is higher than in the Netherlands or Ireland.
+      - Best used for C++/industrial opportunities, not broad backend volume.
+    policy_sources:
+      - label: Red-White-Red Card skilled workers
+        url: https://www.migration.gv.at/en/types-of-immigration/permanent-immigration/skilled-workers-in-shortage-occupations/
+        last_reviewed: "2026-05-04"
+
+  sweden:
+    name: Sweden
+    aliases: [se]
+    country: Sweden
+    search_location: Sweden
+    location_keywords: [Sweden, Stockholm, Gothenburg, Malmo, Lund, Uppsala]
+    default_priority: secondary
+    immigration_path: Work permit / EU Blue Card, with smaller job-market pool
+    job_search_mode: Lightweight test for selected backend and C++/industrial roles
+    permanence_score: 72
+    offshore_sponsor_score: 55
+    english_access_score: 78
+    local_language_risk: medium
+    priority_industries: [industrial software, telecom, robotics, backend, platform, energy]
+    activation_rule: Keep Sweden as a quality-over-volume market.
+    risk_notes:
+      - Market is smaller, so response-rate interpretation needs lower volume expectations.
+    policy_sources:
+      - label: Swedish Migration Agency EU Blue Card
+        url: https://www.migrationsverket.se/en/you-want-to-apply/work/employee-or-self-employed/eu-blue-cards.html
+        last_reviewed: "2026-05-04"
+
+  finland:
+    name: Finland
+    aliases: [fi]
+    country: Finland
+    search_location: Finland
+    location_keywords: [Finland, Helsinki, Espoo, Tampere, Oulu, Turku]
+    default_priority: secondary
+    immigration_path: Specialist/work permit route, with permanent residence rules requiring current official review
+    job_search_mode: Lightweight test; market size is the limiting factor
+    permanence_score: 62
+    offshore_sponsor_score: 48
+    english_access_score: 72
+    local_language_risk: medium
+    priority_industries: [backend, platform, industrial software, telecom, energy]
+    activation_rule: Keep Finland small-volume unless response quality is unusually strong.
+    risk_notes:
+      - Permanent residence rules changed in 2026; re-check before acting.
+    policy_sources:
+      - label: Finland permanent residence permit
+        url: https://migri.fi/en/permanent-residence-permit
+        last_reviewed: "2026-05-04"
+
+  new_zealand:
+    name: New Zealand
+    aliases: [nz]
+    country: New Zealand
+    search_location: New Zealand
+    location_keywords: [New Zealand, Auckland, Wellington, Christchurch]
+    default_priority: small
+    immigration_path: Skilled Migrant Category / Green List where job-offer conditions fit
+    job_search_mode: Small-market supplement only
+    permanence_score: 78
+    offshore_sponsor_score: 42
+    english_access_score: 96
+    local_language_risk: low
+    priority_industries: [backend, platform, engineering tools, industrial software]
+    activation_rule: Do not scale without a clear sponsor/job-offer path.
+    risk_notes:
+      - Small job pool makes it unsuitable as a main line.
+    policy_sources:
+      - label: Skilled Migrant Category Resident Visa
+        url: https://www.immigration.govt.nz/new-zealand-visas/visas/visa/skilled-migrant-category-resident-visa
+        last_reviewed: "2026-05-04"
+
+  united_states:
+    name: United States
+    aliases: [us, usa, america]
+    country: United States
+    search_location: United States
+    location_keywords: [United States, USA, California, Seattle, New York, Austin, Boston, Remote US]
+    default_priority: opportunistic
+    immigration_path: H-1B / transfer / O-1 / NIW/EB routes only when a strong sponsor or exceptional route exists
+    job_search_mode: Opportunistic only; not a family-stability main line
+    permanence_score: 35
+    offshore_sponsor_score: 30
+    english_access_score: 100
+    local_language_risk: low
+    priority_industries: [backend, platform, distributed systems, c++, infrastructure]
+    activation_rule: Only apply where sponsor signal is explicit or the employer has a known immigration path.
+    risk_notes:
+      - H-1B cap selection and China-born green-card backlog make it weak as the stability main line.
+    policy_sources:
+      - label: H-1B electronic registration process
+        url: https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations-and-fashion-models/h-1b-electronic-registration-process
+        last_reviewed: "2026-05-04"

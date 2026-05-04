@@ -1,0 +1,23 @@
+services:
+  job-seeker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: job-seeker-dashboard:latest
+    working_dir: /app
+    env_file:
+      - .env
+    environment:
+      TZ: Asia/Shanghai
+      PYTHON_BIN: python3
+      # linkedin_login.sh assumes a venv-style layout. Pointing it at /usr/local
+      # lets the container reuse the image Python instead of creating .venv at runtime.
+      VENV_DIR: /usr/local
+    volumes:
+      - ./.linkedin_profile:/app/.linkedin_profile
+      - ./local_private:/app/local_private:ro
+      - ./outputs:/app/outputs
+      - ./results:/app/results
+      - ./.env:/app/.env:ro
+    stdin_open: true
+    tty: true

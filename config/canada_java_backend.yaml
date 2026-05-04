@@ -1,0 +1,73 @@
+scoring_weights:
+  language_requirement: 0.10
+  visa_sponsorship: 0.15
+  seniority: 0.08
+  technical_skills: 0.42
+  domain_experience: 0.25
+
+filters:
+  exclude_student_jobs: true
+  exclude_3rd_party: true
+  min_score_threshold: 55
+
+language_preferences:
+  preferred: [English]
+  acceptable: [English]
+  hard_block: []
+
+market_strategy:
+  objective: maximize_offer_probability
+  positioning: Java Backend / Software Engineer for backend platforms, microservices, and reliability-heavy product teams
+  rationale: "Canada should be broader than the Germany logistics angle: Li's strongest success path is mainstream Java/Spring backend plus Kafka, data stores, cloud/Kubernetes, and product-platform evidence in English-speaking teams."
+  strategy_weight: 0.20
+  preferred_titles:
+    - Java Developer
+    - Java Backend Engineer
+    - Software Engineer Java
+    - Backend Software Engineer
+    - Backend Platform Engineer
+    - Microservices Developer
+  preferred_technologies:
+    - Java
+    - Spring Boot
+    - microservices
+    - Kafka
+    - REST
+    - PostgreSQL
+    - MySQL
+    - Redis
+    - Kubernetes
+    - cloud
+  preferred_domains:
+    - platform
+    - fintech
+    - ecommerce
+    - logistics
+    - supply chain
+    - SaaS
+    - payments
+  demand_signals:
+    - hybrid
+    - remote
+    - permanent
+    - sponsorship
+    - relocation
+    - English
+  risk_terms:
+    - must be eligible to work in Canada
+    - Canadian citizenship
+    - frontend
+    - mobile
+
+search:
+  custom_queries:
+    - Java Developer Canada
+    - Java Backend Engineer Canada
+    - Software Engineer Java Canada
+    - Java Spring Boot Canada
+    - Backend Platform Engineer Canada
+    - Java Microservices Canada
+    - Software Engineer Java Toronto
+    - Software Engineer Java Vancouver
+    - Kafka Java Developer Canada
+  max_dynamic_queries: 8

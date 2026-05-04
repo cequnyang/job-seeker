@@ -1,0 +1,69 @@
+scoring_weights:
+  language_requirement: 0.12
+  visa_sponsorship: 0.12
+  seniority: 0.08
+  technical_skills: 0.43
+  domain_experience: 0.25
+
+filters:
+  exclude_student_jobs: true
+  exclude_3rd_party: true
+  min_score_threshold: 55
+
+language_preferences:
+  preferred: [English, German]
+  acceptable: [English]
+  hard_block: [German B2+ required]
+
+market_strategy:
+  objective: maximize_offer_probability
+  positioning: Java Backend / Platform Engineer for logistics, fulfillment, and event-driven systems
+  rationale: Germany gives Li the best odds where Java/Spring/Kafka production backend work intersects with logistics, ecommerce, B2B SaaS, fintech, and supply-chain platforms; German-heavy roles remain a risk.
+  strategy_weight: 0.18
+  preferred_titles:
+    - Java Backend Engineer
+    - Backend Engineer
+    - Platform Engineer
+    - Software Engineer Java
+    - Kafka Backend Engineer
+  preferred_technologies:
+    - Java
+    - Spring Boot
+    - Kafka
+    - microservices
+    - PostgreSQL
+    - MySQL
+    - Redis
+    - Kubernetes
+    - distributed systems
+  preferred_domains:
+    - logistics
+    - fulfillment
+    - supply chain
+    - ecommerce
+    - fintech
+    - platform
+    - b2b
+  demand_signals:
+    - visa sponsorship
+    - relocation support
+    - blue card
+    - hybrid
+    - English
+  risk_terms:
+    - German C1
+    - native German
+    - frontend
+    - PHP
+
+search:
+  custom_queries:
+    - Java Backend Engineer
+    - Java Spring Boot Kafka
+    - Platform Engineer Java
+    - Backend Engineer Logistics
+    - Java Distributed Systems
+    - Spring Boot PostgreSQL Redis
+    - Kafka Backend Engineer
+    - Java Fulfillment
+  max_dynamic_queries: 8

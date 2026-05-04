@@ -1,0 +1,9 @@
+.git
+.venv
+.linkedin_profile
+local_private
+outputs
+results
+__pycache__/
+*.py[cod]
+.env

@@ -1,0 +1,67 @@
+scoring_weights:
+  language_requirement: 0.10
+  visa_sponsorship: 0.14
+  seniority: 0.08
+  technical_skills: 0.42
+  domain_experience: 0.26
+
+filters:
+  exclude_student_jobs: true
+  exclude_3rd_party: true
+  min_score_threshold: 55
+
+language_preferences:
+  preferred: [English]
+  acceptable: [English]
+  hard_block: []
+
+market_strategy:
+  objective: maximize_offer_probability
+  positioning: Java Backend / Platform Engineer for English-first fintech, logistics, SaaS, and high-tech product teams
+  rationale: The Netherlands is an English-friendly supplement; Li should lean into Java/Spring/Kafka backend, platform reliability, fintech/logistics/SaaS, and recognised-sponsor employers rather than German-specific blue-card language.
+  strategy_weight: 0.19
+  preferred_titles:
+    - Java Developer
+    - Java Backend Engineer
+    - Backend Engineer
+    - Software Engineer Java
+    - Platform Engineer
+  preferred_technologies:
+    - Java
+    - Spring Boot
+    - Kafka
+    - microservices
+    - Kubernetes
+    - PostgreSQL
+    - Redis
+    - cloud
+  preferred_domains:
+    - fintech
+    - payments
+    - logistics
+    - ecommerce
+    - SaaS
+    - platform
+    - high tech
+  demand_signals:
+    - recognised sponsor
+    - visa sponsorship
+    - relocation
+    - hybrid
+    - English
+  risk_terms:
+    - Dutch required
+    - fluent Dutch
+    - frontend
+
+search:
+  custom_queries:
+    - Java Backend Engineer Netherlands
+    - Java Spring Boot Kafka Netherlands
+    - Backend Platform Engineer Amsterdam
+    - Software Engineer Java Eindhoven
+    - Java Distributed Systems Netherlands
+    - Backend Engineer Logistics Netherlands
+    - Java Kafka Amsterdam
+    - Software Engineer Java Rotterdam
+  max_dynamic_queries: 8

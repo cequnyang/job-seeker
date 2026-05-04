@@ -1,0 +1,68 @@
+scoring_weights:
+  language_requirement: 0.18
+  visa_sponsorship: 0.12
+  seniority: 0.08
+  technical_skills: 0.38
+  domain_experience: 0.24
+
+filters:
+  exclude_student_jobs: true
+  exclude_3rd_party: true
+  min_score_threshold: 55
+
+language_preferences:
+  preferred: [English, German]
+  acceptable: [English]
+  hard_block: [German B2+ required]
+
+market_strategy:
+  objective: maximize_offer_probability
+  positioning: C++ / Qt / industrial software engineer for DACH automation, HMI, measurement, and engineering-tool teams
+  rationale: "Austria should be a smaller DACH industrial test: Cequn's best-fit demand is Qt/C++ industrial tooling, automation, HMI, measurement, and automotive suppliers, but German-language exposure has to be discounted."
+  strategy_weight: 0.21
+  preferred_titles:
+    - C++ Entwickler
+    - C++ Software Engineer
+    - Qt Entwickler
+    - Qt Developer
+    - HMI Software Engineer
+    - Industrial Software Engineer
+  preferred_technologies:
+    - C++
+    - Qt
+    - QML
+    - Linux
+    - CMake
+    - HMI
+    - diagnostics
+    - automation
+  preferred_domains:
+    - industrial software
+    - automation
+    - HMI
+    - measurement
+    - automotive
+    - energy
+    - engineering tools
+  demand_signals:
+    - relocation
+    - visa sponsorship
+    - hybrid
+    - English
+  risk_terms:
+    - German C1
+    - native German
+    - fluent German
+    - embedded C only
+
+search:
+  custom_queries:
+    - C++ Qt Austria
+    - C++ Linux Austria
+    - C++ Entwickler Qt
+    - HMI Software Engineer Austria
+    - C++ Industrial Software Austria
+    - C++ Diagnostics Austria
+    - Qt QML Austria
+    - C++ Automation Austria
+  max_dynamic_queries: 8

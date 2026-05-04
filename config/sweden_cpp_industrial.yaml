@@ -1,0 +1,69 @@
+scoring_weights:
+  language_requirement: 0.11
+  visa_sponsorship: 0.15
+  seniority: 0.08
+  technical_skills: 0.41
+  domain_experience: 0.25
+
+filters:
+  exclude_student_jobs: true
+  exclude_3rd_party: true
+  min_score_threshold: 55
+
+language_preferences:
+  preferred: [English]
+  acceptable: [English]
+  hard_block: []
+
+market_strategy:
+  objective: maximize_offer_probability
+  positioning: C++ / Linux / Qt engineer for telecom, industrial tooling, robotics, energy, and embedded-adjacent product teams
+  rationale: "Sweden should be quality-over-volume: Cequn's strongest route is not generic Windows desktop C++, but C++/Linux/Qt in telecom, industrial tooling, robotics, energy, and embedded-adjacent software where English teams exist."
+  strategy_weight: 0.21
+  preferred_titles:
+    - C++ Software Engineer
+    - C++ Developer
+    - Software Engineer C++
+    - Qt Developer
+    - Embedded Software Engineer
+    - Tools Engineer
+  preferred_technologies:
+    - C++
+    - Linux
+    - Qt
+    - CMake
+    - diagnostics
+    - embedded
+    - tooling
+    - SDK
+  preferred_domains:
+    - telecom
+    - industrial software
+    - robotics
+    - energy
+    - embedded software
+    - engineering tools
+    - automation
+  demand_signals:
+    - visa sponsorship
+    - relocation
+    - hybrid
+    - English
+  risk_terms:
+    - Swedish required
+    - fluent Swedish
+    - citizenship required
+    - bare metal
+
+search:
+  custom_queries:
+    - C++ Software Engineer Stockholm
+    - C++ Developer Sweden
+    - Software Engineer C++ Sweden
+    - Qt Developer Sweden
+    - C++ Linux Sweden
+    - C++ Telecom Sweden
+    - C++ Robotics Sweden
+    - C++ Industrial Software Sweden
+    - C++ Embedded Software Sweden
+  max_dynamic_queries: 8

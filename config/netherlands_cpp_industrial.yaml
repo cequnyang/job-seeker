@@ -1,0 +1,70 @@
+scoring_weights:
+  language_requirement: 0.10
+  visa_sponsorship: 0.14
+  seniority: 0.08
+  technical_skills: 0.41
+  domain_experience: 0.27
+
+filters:
+  exclude_student_jobs: true
+  exclude_3rd_party: true
+  min_score_threshold: 55
+
+language_preferences:
+  preferred: [English]
+  acceptable: [English]
+  hard_block: []
+
+market_strategy:
+  objective: maximize_offer_probability
+  positioning: C++ / Qt / engineering tools engineer for high-tech systems, industrial tooling, diagnostics, and Eindhoven-style hardware-adjacent software
+  rationale: The Netherlands C++ line should not simply copy Germany's HMI angle; Cequn's better probability is high-tech systems, engineering tools, diagnostics, Qt/Linux, and hardware-adjacent software around English-friendly employers.
+  strategy_weight: 0.22
+  preferred_titles:
+    - C++ Software Engineer
+    - C++ Developer
+    - Qt Developer
+    - Software Engineer C++
+    - Tools Engineer
+    - Diagnostics Engineer
+  preferred_technologies:
+    - C++
+    - Qt
+    - Linux
+    - CMake
+    - diagnostics
+    - SDK
+    - tooling
+    - high tech systems
+  preferred_domains:
+    - high tech systems
+    - engineering tools
+    - industrial software
+    - diagnostics
+    - semiconductor
+    - robotics
+    - automation
+    - device software
+  demand_signals:
+    - recognised sponsor
+    - visa sponsorship
+    - relocation
+    - hybrid
+    - English
+  risk_terms:
+    - Dutch required
+    - fluent Dutch
+    - FPGA only
+    - bare metal
+
+search:
+  custom_queries:
+    - C++ Software Engineer Eindhoven
+    - C++ Developer Netherlands
+    - Software Engineer C++ Netherlands
+    - Qt Developer Netherlands
+    - C++ High Tech Systems Netherlands
+    - C++ Engineering Tools Netherlands
+    - C++ Industrial Software Netherlands
+    - C++ Diagnostics Netherlands
+  max_dynamic_queries: 8
